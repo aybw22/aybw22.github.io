@@ -6,7 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: frederickaTheGreatFont;
-    color: rgb(125, 125, 125)
+    color: rgb(100, 100, 100)
 }
 
 body {
@@ -24,11 +24,26 @@ body {
 }
 
 .section {
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 48px;
+    height: 100vh;
+    width: 100vw;
+    padding: 96px 96px;
     scroll-snap-align: start;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title-page {
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-image: url('./green-leaves-rectangle-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 380px;
 }
 
 hr {
@@ -42,7 +57,7 @@ hr {
 
 h1 {
     text-transform: uppercase;
-    padding: 20px;
+    padding: 12px;
     font-size: 2.8em;
 }
 
@@ -55,4 +70,23 @@ h2 {
 
 p {
     font-size: 0.8em;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    padding: 24px 64px;
+    width: 100%;
+    font-size: 5em;
+}
+
+.full-width-image {
+    max-width: 95%;
 }
