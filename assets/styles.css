@@ -32,13 +32,12 @@ body {
 }
 
 hr {
-    background-color: transparent;
+    background-color: rgb(100, 100, 100);
     border: 0;
-    border-top: 3px double rgb(125, 125, 125);
-    height: 2px;
-    margin: 2rem auto;
-    width: 30%;
-    padding-bottom: 32px;
+    height: 1px;
+    width: 10%;
+    position: relative;
+    margin: 30px auto;
 }
 
 h1 {
