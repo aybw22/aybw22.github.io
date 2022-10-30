@@ -1,0 +1,49 @@
+@font-face {
+    font-family: frederickaTheGreatFont;
+    src: url(fredericka-the-great.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: frederickaTheGreatFont;
+    color: rgb(125, 125, 125)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section {
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 48px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding: 32px;
+    font-size: 2.8em;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.8em;
+}
