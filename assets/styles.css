@@ -31,9 +31,19 @@ body {
     text-align: center;
 }
 
+hr {
+    background-color: transparent;
+    border: 0;
+    border-top: 3px double rgb(125, 125, 125);
+    height: 2px;
+    margin: 2rem auto;
+    width: 30%;
+    padding-bottom: 32px;
+}
+
 h1 {
     text-transform: uppercase;
-    padding: 32px;
+    padding: 20px;
     font-size: 2.8em;
 }
 
