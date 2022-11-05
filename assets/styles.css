@@ -17,6 +17,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #FDFCF7;
 }
 
 .container {
@@ -99,7 +100,7 @@ span {
 }
 
 .divider-image {
-    max-width: 90%;
+    width: 90%;
     padding: 160px 0;
 }
 
@@ -114,6 +115,6 @@ span {
 }
 
 .center-image {
-    max-width: 90%;
+    width: 90%;
     padding: 128px 0;
 }
