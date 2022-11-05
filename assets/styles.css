@@ -1,12 +1,17 @@
 @font-face {
-    font-family: frederickaTheGreatFont;
-    src: url(fredericka-the-great.ttf);
+    font-family: CrimsonPro;
+    src: url(font-CrimsonPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Themysion;
+    src: url(font-themysion.ttf);
 }
 
 * {
     box-sizing: border-box;
-    font-family: frederickaTheGreatFont;
-    color: rgb(100, 100, 100)
+    font-family: CrimsonPro;
+    color: #222424;
 }
 
 body {
@@ -14,79 +19,96 @@ body {
     padding: 0;
 }
 
-.scroll-container {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-.section {
-    height: 100vh;
-    width: 100vw;
-    padding: 96px 96px;
-    scroll-snap-align: start;
-    text-align: center;
+.container {
     display: flex;
     flex-direction: column;
-}
-
-
-.title-page {
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    background-image: url('./green-leaves-rectangle-2.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 380px;
-}
-
-hr {
-    background-color: rgb(100, 100, 100);
-    border: 0;
-    height: 1px;
-    width: 10%;
-    position: relative;
-    margin: 30px auto;
+    align-items: center;;
+    text-align: center;
+    justify-content: flex-start;
 }
 
 h1 {
-    text-transform: uppercase;
-    padding: 12px;
-    font-size: 2.8em;
+    font-family: Themysion;
+    font-size: 13em;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0.2em;
 }
 
 h2 {
+    font-size: 4.5em;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 1em;
     text-transform: uppercase;
-    padding-top: 16px;
-    padding-bottom: 4px;
-    font-size: 1.2em;
+}
+
+h3 {
+    padding-top: 2em;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Used in title section */
+h5 {    
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 15%;
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 10%;
 }
 
-.title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
+p + p {
+    padding-top: 2em;
 }
 
-.title {
-    position: absolute;
-    padding: 24px 64px;
-    width: 100%;
-    font-size: 5em;
+span {
+    display: block;
+    margin: 0;
+    padding: 0.2em 0;    
 }
 
-.full-width-image {
-    max-width: 95%;
+.title-primary-text {    
+    font-size: 4em;
+    padding-top: 0.5em;
+}
+
+.title-primary-text-small {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+.title-subtext {
+    font-size: 3em;
+    padding-bottom: 1.5em;
+}
+
+.title-secondary-text {
+    font-size: 3.5em;
+    padding-bottom: 2em;
+}
+
+.divider-image {
+    max-width: 90%;
+    padding: 160px 0;
+}
+
+.right-align {
+    align-self: end;
+    
+}
+
+.left-align {
+    align-self: start;
+    transform: rotate(180deg);
+}
+
+.center-image {
+    max-width: 90%;
+    padding: 128px 0;
 }
