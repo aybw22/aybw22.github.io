@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+h1,h2,h3,h4,h5,p {
+    width: 100%;
+}
+
 h1 {
     font-family: Themysion;
     font-size: 13em;
@@ -53,13 +57,15 @@ h3 {
 h5 {    
     text-transform: uppercase;
     font-weight: normal;
-    margin: 0 15%;
+    margin: 0;
+    padding: 0 15%;
 }
 
 p {
     font-size: 1em;
     font-style: italic;
-    margin: 0 10%;
+    margin: 0;
+    padding: 0 10%;
 }
 
 p + p {
